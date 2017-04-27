@@ -15,7 +15,7 @@ public class Main {
         claseProgramacion.add(new Alumno("87654321D","Carlitos","Alvarez","Real S/N","ca@hotmail.com"));
         claseProgramacion.add(new Alumno("12344321E","Manuela","Blanco","Avda. de la 0","mb@mail.com"));
 
-        Collections.sort(claseProgramacion);
+        Collections.sort(claseProgramacion, Alumno.comparadorPorApellidosNombre);
 
         for (Alumno estudiante:
                 claseProgramacion) {

@@ -99,7 +99,7 @@ public class Alumno implements Comparable{
     }
 
 
-    Comparator<Alumno> comparadorPorApellidosNombre = new Comparator<Alumno>() {
+    public static Comparator<Alumno> comparadorPorApellidosNombre = new Comparator<Alumno>() {
         @Override
         public int compare(Alumno alumno1, Alumno alumno2) {
             int res;
@@ -112,7 +112,7 @@ public class Alumno implements Comparable{
         }
     };
 
-    Comparator<Alumno> comparadorPorLongitudNombre = new Comparator<Alumno>() {
+    public static Comparator<Alumno> comparadorPorLongitudNombre = new Comparator<Alumno>() {
         @Override
         public int compare(Alumno alumno1, Alumno alumno2) {
             return alumno1.getNombre().length() - alumno2.getNombre().length();
